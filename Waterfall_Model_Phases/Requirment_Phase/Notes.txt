@@ -1,0 +1,47 @@
+What is the Requirement Phase?
+    The Requirement Phase is the first and most important phase of software development where the needs and expectations of the customer or users are identified, analyzed, and documented.
+Purpose of the Requirement Phase
+    Understand the problem to be solved
+    Identify user needs
+    Define system functionality
+    Avoid misunderstandings later in development
+What is Concept Exploration?
+  Concept exploration is the early activity in software development that focuses on understanding what problem needs to be solved and what the software must do, rather than how it will be built.
+
+ It concentrates on requirements, not implementation.
+      Determine What Client Needs, Not What Client Wants
+      Clients often describe solutions instead of real problems.
+      Concept exploration identifies the actual needs behind the requests.
+
+Example:
+
+    Client wants: “Add more buttons”
+    Client needs: “Faster access to features”
+
+ The goal is to solve the real problem, not blindly follow requests.
+
+Information Exchange Between Programmer and End-User
+  Continuous communication between:
+      Developers
+      End-users
+      Stakeholders
+  
+  Methods:
+      Interviews
+      Meetings
+      Questionnaires
+
+Prototypes
+  📌 This ensures clear understanding and avoids misinterpretation.
+
+Determine the Constraints
+    Constraints define the limits within which the software must be developed.
+
+Common Constraints:
+      Cost – Budget limitations
+      Deadline – Time schedule
+      Reliability – System accuracy and availability
+      Size – Memory and storage limits
+      Performance – Speed and response time
+      Platform – Hardware or OS restrictions
+📌 Constraints directly affect design and development decisions.
