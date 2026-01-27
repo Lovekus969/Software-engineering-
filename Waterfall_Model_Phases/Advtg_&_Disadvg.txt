@@ -1,0 +1,35 @@
+                                                                            https://www.youtube.com/watch?v=Z4beYZRnKyc&t=48s   go and cheack it out 
+
+Advantages of the Waterfall Model
+
+      Simple & easy to understand
+      Very structured approach — good for beginners and academic learning.
+      
+      Clear stages and documentation
+      Each phase (requirements → design → development → testing → deployment) is well-defined with proper documentation.
+      
+      Easy to manage
+      Since everything is planned upfront, progress is easy to track and manage.
+      
+      Works well for small, stable projects
+      Best when requirements are clear and unlikely to change.
+      
+      Good for regulated industries
+      Useful where strict documentation is required (government, healthcare, banking).
+
+ Disadvantages of the Waterfall Model
+
+      No flexibility for changes
+      Once a phase is completed, going back is difficult and costly.
+      
+      Late testing
+      Testing happens near the end, so bugs are discovered very late.
+      
+      Customer feedback comes too late
+      Client sees the product only after development is done.
+      
+      High risk for complex projects
+      Not suitable for large, long-term, or evolving systems.
+
+      No working software until the end
+      There’s no usable product early in the process.
