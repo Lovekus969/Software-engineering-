@@ -1,0 +1,10 @@
+AR SnowAssist – Real-Time Snow Removal & Accessibility Navigation System
+
+Why This Is Strong
+ Real-world problem
+
+In cities like Brampton and Toronto:
+    Snow blocks sidewalks
+    Bus stops become inaccessible
+    Wheelchair users face mobility issues
+    People don’t know if sidewalks are cleared
