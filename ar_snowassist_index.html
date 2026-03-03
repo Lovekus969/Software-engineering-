@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR SnowAssist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 400;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00e0ff;
+        }
+
+        .hero {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #d3d3d3;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #00e0ff;
+            color: black;
+        }
+
+        .btn-primary:hover {
+            background-color: #00bcd4;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid #00e0ff;
+            color: #00e0ff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #00e0ff;
+            color: black;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            background-color: rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AR SnowAssist</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Reports</a>
+        <a href="#">AR Mode</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Safe Winter Navigation with Augmented Reality</h2>
+        <p>
+            AR SnowAssist is a full-stack augmented reality system that helps pedestrians 
+            navigate safely during winter conditions. Users can report snow-blocked sidewalks 
+            and view real-time AR overlays showing safe walking paths.
+        </p>
+        <button class="btn btn-primary">Report Snow</button>
+        <button class="btn btn-secondary">Launch AR Mode</button>
+    </div>
+</section>
+
+<footer>
+    © 2026 AR SnowAssist | Algoma University Project
+</footer>
+
+</body>
+</html>
