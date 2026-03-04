@@ -1,3 +1,10 @@
 he process of developing a software product using software engineering principles and methods is referred to as software evolution. This includes the initial development of software and its maintenance and updates, till desired software product is developed, which satisfies the expected requirements.
 
 Evolution starts from the requirement gathering process. After which developers create a prototype of the intended software and show it to the users to get their feedback at the early stage of software product development. The users suggest changes, on which several consecutive updates and maintenance keep on changing too. This process changes to the original software, till the desired software is accomplished.
+
+What is Augmented Reality?
+
+Augmented Reality (AR) is a technology that adds digital elements (images, sounds, 3D objects, text) on top of the real world using a device like a smartphone, tablet, or AR glasses.
+
+    It does not replace the real world.
+    It enhances the real world.
