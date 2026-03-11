@@ -1,0 +1,17 @@
+Development Model: Agile Methodology
+
+Chosen Methodology: Agile
+
+Reasoning:
+
+Iterative Development: AR applications for accessibility need continuous testing and user feedback, especially from blind or visually impaired users. Agile allows iterative cycles (sprints) where features can be tested, refined, and improved rapidly.
+
+Team Expertise & Roles: Agile is suitable for a team with diverse roles (frontend developers, AR/UX designers, backend developers, and accessibility experts). It encourages close collaboration and communication among members, which ensures that accessibility features are accurately implemented.
+
+Flexibility: Developing AR applications often involves experimentation with new technologies like AR SDKs, sensors, and haptic feedback. Agile allows adapting to changes in requirements or technical challenges without delaying the entire project.
+
+Timeline Management: The project can be divided into small sprints (e.g., 2–3 weeks each), where each sprint focuses on developing and testing specific features (like obstacle detection, audio guidance, or object recognition). This makes the timeline manageable and ensures steady progress.
+
+User-Centered Approach: Agile emphasizes regular user feedback, which is crucial for accessibility solutions. Blind or visually impaired users can provide insights after each sprint, helping the team improve usability and functionality effectively.
+
+Conclusion: Agile provides the flexibility, iterative testing, and user-focused development necessary for building an effective AR application that meets the real-world needs of blind and visually impaired users.
