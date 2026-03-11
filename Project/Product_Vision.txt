@@ -1,0 +1,2 @@
+For Blind and visually impaired people 
+who Face challenges in navigating spaces and locating objects independently, the AR Accessibility Guide is a Mobile and wearable AR application that Provides real-time audio and haptic feedback to help users identify obstacles, directions, and objects in their environment. Unlike Traditional tools like canes or static navigation apps, our product Offers an immersive, real-time AR experience that empowers blind and visually impaired users to move safely and independently.
