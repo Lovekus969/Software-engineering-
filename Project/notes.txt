@@ -1,0 +1,7 @@
+An AR-based accessibility application helps people with disabilities interact with the physical and digital world more easily by overlaying virtual information onto real-world objects.
+
+Examples of accessibility needs it can help with:
+
+    Visual impairments (blind or low vision)
+    Hearing impairments
+    Cognitive or mobility challenges
