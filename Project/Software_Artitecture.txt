@@ -1,0 +1,16 @@
+Object Detection
+
+      User finds objects using AR.
+
+Sequence:
+
+          User → AR Camera → Object Detector → System → Voice Assistant → User
+
+Steps:
+
+        User opens AR navigation.
+        AR Camera captures environment.
+        Object Detector processes image.
+        System identifies object.
+        Voice Assistant gives audio feedback.
+        User receives instructions.
