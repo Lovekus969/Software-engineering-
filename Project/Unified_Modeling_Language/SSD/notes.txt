@@ -1,0 +1,13 @@
+UML (Unified Modeling Language)
+
+UML is a visual language used to design and describe software systems.
+
+It helps developers show:
+
+        system structure
+        
+        system behavior
+        
+        interactions between components
+        
+        UML uses diagrams to represent systems.
