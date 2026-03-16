@@ -11,3 +11,15 @@ It helps developers show:
         interactions between components
         
         UML uses diagrams to represent systems.
+
+SSD (System Sequence Diagram)
+
+An SSD is a type of sequence diagram used in system analysis.
+
+It shows:
+
+        interaction between actor and system
+        
+        messages sent to the system
+        
+        order of operations
