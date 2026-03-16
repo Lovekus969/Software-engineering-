@@ -23,3 +23,25 @@ It shows:
         messages sent to the system
         
         order of operations
+
+User                              AR Accessibility System
+ |                                       |
+ |---- Start AR Scan ------------------->|
+ |                                       |
+ |<--- Camera Activated -----------------|
+ |                                       |
+ |<--- Environment Scanning -------------|
+ |                                       |
+ |<--- Display AR Labels ----------------|
+ |                                       |
+ |<--- Voice Feedback -------------------|
+ |                                       |
+ |---- Request Object ------------------>|
+ |                                       |
+ |<--- Object Location ------------------|
+ |                                       |
+ |---- Start Navigation ---------------->|
+ |                                       |
+ |<--- Obstacle Alert -------------------|
+ |                                       |
+ |<--- Safe Direction -------------------|
