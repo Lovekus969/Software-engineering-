@@ -1,0 +1,7 @@
+What is Wireframing (Simple Definition)
+
+Wireframing is a low-level design of your user interface that shows:
+
+    Layout of the screen
+    Placement of buttons, images, text
+    Navigation flow
