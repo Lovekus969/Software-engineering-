@@ -1,0 +1,22 @@
+This project is an Augmented Reality (AR) based application designed to help visually impaired users understand and interact with their surroundings. The system uses a mobile camera and AI to detect objects and provide audio feedback to the user.
+
+2. Purpose
+
+  The purpose of this system is to:
+      Help users identify objects in real time
+      Improve independence for visually impaired people
+      Provide voice-based navigation and assistance
+3. Scope
+
+`The system will:
+    Detect objects using the camera
+    Convert detected objects into audio output
+    Provide navigation assistance
+    Work on mobile devices (Android/iOS)
+
+4. System Overview
+
+The application works in three main steps:
+    Capture real-world environment using camera
+    Process image using AI/ML model
+    Provide output through voice
