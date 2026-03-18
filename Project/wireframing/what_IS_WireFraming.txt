@@ -5,3 +5,6 @@ Wireframing is a low-level design of your user interface that shows:
     Layout of the screen
     Placement of buttons, images, text
     Navigation flow
+
+## Commented 17 march 2026  
+Lets add some addtional feature in this  model like figure out the distance and direction of object . 
