@@ -20,3 +20,23 @@ The application works in three main steps:
     Capture real-world environment using camera
     Process image using AI/ML model
     Provide output through voice
+
+5. Functional Requirements
+
+  The system should:
+      Capture live video from the camera
+      Detect objects (e.g., chair, door, person)
+      Convert text to speech
+      Provide real-time feedback
+      Allow user voice commands
+      Detect obstacles and alert users
+
+6. Non-Functional Requirements
+
+    The system should:
+
+      Be fast (real-time response)
+      Be user-friendly and simple
+      Ensure high accuracy in object detection
+      Work in different lighting conditions
+      Maintain user privacy and data security
