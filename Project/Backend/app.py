@@ -1,72 +1,56 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-import base64
+from flask import Flask, Response
 import cv2
-import numpy as np
-import tensorflow as tf
-from PIL import Image
-import io
+from detector import detect_objects
+import json
 
 app = Flask(__name__)
-CORS(app)
 
-# Load pre-trained COCO-SSD model (TensorFlow Hub)
-model = tf.saved_model.load("ssd_mobilenet_v2_fpnlite_320x320/saved_model")
+camera = cv2.VideoCapture(0)
 
-# COCO class labels
-COCO_CLASSES = {
-    1: "person", 2: "bicycle", 3: "car", 4: "motorcycle",
-    5: "airplane", 6: "bus", 7: "train", 8: "truck",
-    9: "boat", 10: "traffic light", 11: "fire hydrant",
-    # ... you can extend this if needed
-}
+@app.route('/video')
+def video_feed():
+    def generate():
+        while True:
+            success, frame = camera.read()
+            if not success:
+                break
 
-def detect_object(image_array):
-    """
-    Detect object from image using TensorFlow COCO-SSD.
-    Returns object name, distance, direction.
-    """
-    # Convert to tensor
-    input_tensor = tf.convert_to_tensor(image_array)
-    input_tensor = input_tensor[tf.newaxis, ...]  # add batch dim
-    detections = model(input_tensor)
+            detections, response_time = detect_objects(frame)
 
-    # Extract first detection with confidence > 0.5
-    scores = detections['detection_scores'][0].numpy()
-    classes = detections['detection_classes'][0].numpy().astype(int)
-    boxes = detections['detection_boxes'][0].numpy()  # y_min, x_min, y_max, x_max
+            # Draw boxes
+            for obj in detections:
+                (x1, y1, x2, y2) = obj["box"]
+                label = obj["label"]
 
-    for i in range(len(scores)):
-        if scores[i] > 0.5:
-            obj_class = COCO_CLASSES.get(classes[i], "Unknown")
-            box = boxes[i]
-            # Calculate direction: left, center, right
-            x_center = (box[1] + box[3]) / 2
-            if x_center < 0.33:
-                direction = "Left"
-            elif x_center < 0.66:
-                direction = "Center"
-            else:
-                direction = "Right"
-            # Dummy distance (later replace with real depth calculation)
-            distance = f"{round((1 - scores[i]) * 5 + 1, 2)} meters"
-            return {"object": obj_class, "distance": distance, "direction": direction}
+                cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                cv2.putText(frame, label, (x1, y1 - 10),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
-    return {"object": "None", "distance": "-", "direction": "-"}
+            # Show response time
+            cv2.putText(frame, f"Time: {response_time:.2f}s",
+                        (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
 
+            _, buffer = cv2.imencode('.jpg', frame)
+            frame_bytes = buffer.tobytes()
 
-@app.route('/detect', methods=['POST'])
-def detect():
-    data = request.json
-    img_data = data['image'].split(",")[1]  # remove 'data:image/png;base64,'
-    img_bytes = base64.b64decode(img_data)
-    img = Image.open(io.BytesIO(img_bytes)).convert('RGB')
-    img_array = np.array(img)
+            yield (b'--frame\r\n'
+                   b'Content-Type: image/jpeg\r\n\r\n' + frame_bytes + b'\r\n')
 
-    result = detect_object(img_array)
-    return jsonify(result)
+    return Response(generate(),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
 
+@app.route('/data')
+def data():
+    success, frame = camera.read()
+    if not success:
+        return {"error": "camera failed"}
 
-if __name__ == '__main__':
-    print("Starting backend at http://127.0.0.1:5000")
+    detections, response_time = detect_objects(frame)
+
+    return {
+        "detections": detections,
+        "response_time": response_time
+    }
+
+if __name__ == "__main__":
     app.run(debug=True)
