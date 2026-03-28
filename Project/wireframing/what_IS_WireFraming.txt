@@ -8,3 +8,19 @@ Wireframing is a low-level design of your user interface that shows:
 
 ## Commented 17 march 2026  
 Lets add some addtional feature in this  model like figure out the distance and direction of object . 
+
+ -------------------------------------
+| 🔴 Camera View (Live Feed)          |
+|                                     |
+|   [ Person ]                         |
+|   Distance: 2.3 m                    |
+|                                     |
+|        🚶‍♂️                          |
+|                                     |
+|   [ Chair ]                          |
+|   Distance: 1.2 m                    |
+|                                     |
+|                                     |
+|-------------------------------------|
+| ▶ Start   ⏸ Stop   🔊 Audio ON/OFF  |
+ -------------------------------------
