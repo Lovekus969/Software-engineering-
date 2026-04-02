@@ -1,0 +1,8 @@
+Types of Black Box Testing
+Black Box Testing will be divided into further types which is following:
+
+1. Functional Testing
+Functional Testing is a type of Software Testing in which the system is tested against the functional requirements and specifications. Functional testing ensures that the requirements or specifications are properly satisfied by the application. 
+
+2. Non-Functional Testing
+Non-Functional Testing is a type of Software Testing that is performed to verify the non-functional requirements of the application. It verifies whether the behavior of the system is as per the requirement or not. It tests all the aspects that are not tested in functional testing. 
