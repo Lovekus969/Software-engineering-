@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    font-family: Arial;
-    background: black;
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
     color: white;
 }
 
@@ -9,16 +9,19 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    background: #111;
+    background: #1a1a1a;
     padding: 10px;
+    border-bottom: 1px solid #333;
 }
 
 .navbar button {
     margin: 5px;
-    padding: 10px;
-    background: #00aaff;
+    padding: 10px 15px;
+    background: #00c3ff;
     border: none;
-    color: white;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -33,17 +36,38 @@ body {
 }
 
 /* CAMERA */
-video {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
+.camera-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-/* OUTPUT */
-#output {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.8);
-    padding: 10px;
+video {
+    width: 80%;
+    height: 60vh;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #00c3ff;
+}
+
+/* INFO PANEL */
+.info-panel {
+    margin-top: 20px;
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.info-panel p {
+    font-size: 18px;
+}
+
+/* READER */
+input, button {
+    margin-top: 10px;
+}
+
+/* SETTINGS */
+input[type="range"] {
+    width: 200px;
 }
