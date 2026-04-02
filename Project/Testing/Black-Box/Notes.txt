@@ -30,3 +30,4 @@ Usability Testing in software testing is a type of testing, that is done from an
 
 3. Compatibility Testing
 Compatibility Testing is software testing that comes under the non functional testing category, and it is performed on an application to check its compatibility (running capability) on different platforms/environments. This testing is done only when the application becomes stable. 
+
