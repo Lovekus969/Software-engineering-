@@ -6,3 +6,27 @@ Functional Testing is a type of Software Testing in which the system is tested a
 
 2. Non-Functional Testing
 Non-Functional Testing is a type of Software Testing that is performed to verify the non-functional requirements of the application. It verifies whether the behavior of the system is as per the requirement or not. It tests all the aspects that are not tested in functional testing. 
+
+Types of Functional Testing
+Functional Testing includes the following types:
+
+1. Unit Testing
+Unit Testing is a method of testing individual units or components of a software application. It is typically done by developers and is used to ensure that the individual units of the software are working as intended.
+
+2. Integration Testing
+In Integration Testing , two or more unit-tested modules are integrated, and their interactions are verified to ensure they work as expected. Interface errors are also detected.
+
+3. System Testing
+System Testing is a type of software testing that evaluates the overall functionality and performance of a complete and fully integrated software solution. It tests if the system meets the specified requirements and if it is suitable for delivery to the end-users. 
+
+Types of Non-functional Testing
+Here are the Types of Non-Functional Testing
+
+1. Performance Testing
+Performance Testing is a type of software testing that ensures software applications perform properly under their expected workload. It is a testing technique carried out to determine system performance in terms of sensitivity, reactivity, and stability under a particular workload.
+
+2. Usability Testing
+Usability Testing in software testing is a type of testing, that is done from an end user’s perspective to determine if the system is easily usable. Usability testing is generally the practice of testing how easy a design is to use on a group of representative users.
+
+3. Compatibility Testing
+Compatibility Testing is software testing that comes under the non functional testing category, and it is performed on an application to check its compatibility (running capability) on different platforms/environments. This testing is done only when the application becomes stable. 
