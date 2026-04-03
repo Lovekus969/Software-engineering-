@@ -13,7 +13,8 @@ Lets add some addtional feature in this  model like figure out the distance and 
 | 🔴 Camera View (Live Feed)          |
 |                                     |
 |   [ Person ]                         |
-|   Distance: 2.3 m                    |
+|   Distance: 2.3 m     
+position|
 |                                     |
 |        🚶‍♂️                          |
 |                                     |
