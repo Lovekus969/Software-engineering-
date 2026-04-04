@@ -21,18 +21,18 @@
 
     <!-- 🔥 HOME PAGE -->
     <div id="home" class="page active">
-        <h2>Welcome to AR Accessibility Assistant</h2>
-        <p>This app helps visually impaired users detect objects and read text.</p>
+        <div class="hero">
+            <h1>Welcome to AR Accessibility Assistant</h1>
+            <p>Helping visually impaired users detect objects and read text with AR technology.</p>
+            <img src="assets/ar-icon.png" alt="AR Illustration" class="hero-img">
+        </div>
     </div>
 
     <!-- 🔥 SCAN PAGE -->
     <div id="scan" class="page">
-        <!-- Camera -->
         <div class="camera-container">
             <video id="camera" autoplay></video>
         </div>
-
-        <!-- Info Panel -->
         <div class="info-panel">
             <h3>Detection Info</h3>
             <p><strong>Object:</strong> <span id="obj">-</span></p>
@@ -58,7 +58,6 @@
         <button onclick="toggleVoice()">Toggle Voice</button>
     </div>
 
-    <!-- 🔥 LINK SCRIPT -->
     <script src="script.js"></script>
 </body>
 </html>
