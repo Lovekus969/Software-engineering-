@@ -55,7 +55,7 @@ AR-Project/
 <p align="center">
   <img src="Project/assets/demo1.png" width="45%" />
   <img src="Project/assets/demo2.png" width="45%" />
-  <img src="Project/assets/demo3.png" width="45%" />
+  <img src="Project/assets/Demo3.png" width="45%" />
   
 </p>
 
