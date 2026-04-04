@@ -53,8 +53,8 @@ AR-Project/
 ## 📸 Demo
 
 <p align="center">
-  <img src="software-engineering/Project/assets/demo1.png" width="45%" />
-  <img src="software-engineering/Project/assets/demo2.png" width="45%" />
+  <img src="Project/assets/demo1.png" width="45%" />
+  <img src="Project/assets/demo2.png" width="45%" />
 </p>
 
 ---
