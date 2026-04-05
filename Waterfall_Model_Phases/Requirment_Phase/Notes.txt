@@ -32,7 +32,7 @@ Information Exchange Between Programmer and End-User
       Questionnaires
 
 Prototypes
-  📌 This ensures clear understanding and avoids misinterpretation.
+  This ensures clear understanding and avoids misinterpretation.
 
 Determine the Constraints
     Constraints define the limits within which the software must be developed.
@@ -44,4 +44,31 @@ Common Constraints:
       Size – Memory and storage limits
       Performance – Speed and response time
       Platform – Hardware or OS restrictions
-📌 Constraints directly affect design and development decisions.
+Constraints directly affect design and development decisions.
+
+
+Waterfall Model (Software Development)
+
+Definition:
+
+A linear and sequential software development model.
+Phases flow downward like a waterfall.
+Once a phase is completed, you can’t go back easily.
+
+Phases:
+
+Requirements Analysis – Gather and document requirements.
+System Design – Plan architecture, database, UI, etc.
+Implementation (Coding) – Write the actual code.
+Testing – Check for bugs and errors.
+Deployment – Release the system to users.
+Maintenance – Fix issues after deployment.
+
+Problem / Limitation:
+
+No easy backward movement: Mistakes in early phases (requirements or design) are hard and costly to fix later.
+Inflexible: Not suitable if requirements change during development.
+
+Example:
+
+Like a real waterfall, once water flows down, it cannot flow back up.
