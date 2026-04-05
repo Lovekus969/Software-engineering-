@@ -53,8 +53,8 @@ AR-Project/
 ## 📸 Demo
 
 <p align="center">
-    <img src="Project/assets/bottel1.png" width="45%" />
-    <img src="Project/assets/Bottle2.png" width="45%" />
+    <img src="Project/assets/Bottel.png" width="45%" />
+    <img src="Project/assets/Bottel2.png" width="45%" />
   <img src="Project/assets/demo1.png" width="45%" />
   <img src="Project/assets/demo2.png" width="45%" />
   <img src="Project/assets/Demo3.png" width="45%" />
