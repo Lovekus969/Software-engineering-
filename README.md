@@ -54,7 +54,9 @@ AR-Project/
 
 <p align="center">
     <img src="Project/assets/Bottel.png" width="45%" />
+    ## -- Bottle keep at Righ near the camera so the output is like 
     <img src="Project/assets/Bottel2.png" width="45%" />
+    ## -- Increase some distance and make changes to the positions themselves 
   <img src="Project/assets/demo1.png" width="45%" />
   <img src="Project/assets/demo2.png" width="45%" />
   <img src="Project/assets/Demo3.png" width="45%" />
