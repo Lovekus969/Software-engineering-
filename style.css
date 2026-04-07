@@ -1,0 +1,133 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0d0d0d;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 10px 20px;
+    border-bottom: 2px solid #00c3ff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.navbar button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #00c3ff, #00ffea);
+    border: none;
+    border-radius: 8px;
+    color: #0d0d0d;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.navbar button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,195,255,0.5);
+}
+
+/* PAGES */
+.page {
+    display: none;
+    padding: 30px 20px;
+    animation: fadeIn 0.5s;
+}
+
+.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #00c3ff;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+.hero-img {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* CAMERA */
+.camera-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+video {
+    width: 80%;
+    height: 60vh;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 3px solid #00c3ff;
+}
+
+/* INFO PANEL */
+.info-panel {
+    margin-top: 20px;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.info-panel p {
+    font-size: 18px;
+}
+
+/* READER */
+input, button {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+button {
+    background: #00c3ff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* SETTINGS */
+input[type="range"] {
+    width: 250px;
+}
