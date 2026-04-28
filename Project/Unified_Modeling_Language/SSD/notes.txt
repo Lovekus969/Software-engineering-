@@ -13,9 +13,7 @@ It helps developers show:
         UML uses diagrams to represent systems.
 
 SSD (System Sequence Diagram)
-
-An SSD is a type of sequence diagram used in system analysis.
-
+    An SSD is a type of sequence diagram used in system analysis.
 It shows:
 
         interaction between actor and system
@@ -24,24 +22,27 @@ It shows:
         
         order of operations
 
-User                              AR Accessibility System
- |                                       |
- |---- Start AR Scan ------------------->|
- |                                       |
- |<--- Camera Activated -----------------|
- |                                       |
- |<--- Environment Scanning -------------|
- |                                       |
- |<--- Display AR Labels ----------------|
- |                                       |
- |<--- Voice Feedback -------------------|
- |                                       |
- |---- Request Object ------------------>|
- |                                       |
- |<--- Object Location ------------------|
- |                                       |
- |---- Start Navigation ---------------->|
- |                                       |
- |<--- Obstacle Alert -------------------|
- |                                       |
- |<--- Safe Direction -------------------|
+
+                       User                              AR Accessibility System
+                         |                                       |
+                         |---- Start AR Scan ------------------->|
+                         |                                       |
+                         |<--- Camera Activated -----------------|
+                         |                                       |
+                         |<--- Environment Scanning -------------|
+                         |                                       |
+                         |<--- Display AR Labels ----------------|
+                         |                                       |
+                         |<--- Voice Feedback -------------------|
+                         |                                       |
+                         |---- Request Object ------------------>|
+                         |                                       |
+                         |<--- Object Location ------------------|
+                         |                                       |
+                         |---- Start Navigation ---------------->|
+                         |                                       |
+                         |<--- Obstacle Alert -------------------|
+                         |                                       |
+                         |<--- Safe Direction -------------------|
+
+
