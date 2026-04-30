@@ -11,6 +11,12 @@ This project is built on a simple principle:
 Our goal is not just technical accuracy, but **reliability, safety, and usability in real-world conditions**.
 
 ---
+flowchart LR
+    A[Camera Input] --> B[Frame Processing]
+    B --> C[Object Detection]
+    C --> D[Confidence Filter]
+    D --> E[Decision Logic]
+    E --> F[Audio Output]
 
 ## 🎯 Problem Statement
 
