@@ -166,3 +166,138 @@ This project is built with a commitment:
 > **Even if the grades don’t reflect it, the impact should.**
 
 Technology should not just impress — it should **serve**.
+
+# ⚠️ Current Challenges & Improvements (Transparency Section)
+
+## 🔍 What’s Going On Right Now?
+
+While building the AR Vision Assist system, we identified critical issues that directly impact **user trust and usability**, especially for visually impaired users.
+
+---
+
+## ❗ Issue 1: Repeated Audio Feedback
+
+### Problem:
+
+The system detects objects continuously in each video frame (~30 FPS), which causes the same object to trigger audio repeatedly.
+
+Example:
+
+> "Chair... Chair... Chair..." (repeats continuously)
+
+### Why This Is a Problem:
+
+* Annoying and overwhelming for users
+* Reduces trust in the system
+* Makes real-time usage difficult
+
+### ✅ Solution Implemented:
+
+* Introduced **cooldown mechanism** to limit repeated audio
+* Audio plays only when:
+
+  * A new object is detected
+  * OR after a fixed time interval
+
+---
+
+## ❗ Issue 2: Inaccurate Object Detection (High Bias)
+
+### Problem:
+
+The system sometimes:
+
+* Misclassifies objects
+* Detects generic labels instead of specific ones
+* Struggles in complex environments
+
+### Root Cause:
+
+* Use of basic detection techniques (OpenCV)
+* Model is too simple → **High Bias (Underfitting)**
+
+---
+
+## 🧠 Understanding the Problem
+
+\text{Total Error} = \text{Bias}^2 + \text{Variance} + \text{Noise}
+
+* **High Bias** → Model is too simple → misses real-world patterns
+* Leads to incorrect or vague detections
+
+---
+
+## ✅ Improvements in Progress
+
+### 1. 🎯 Confidence Threshold Filtering
+
+* Ignore detections below a certain confidence level
+* Reduces false positives
+
+---
+
+### 2. 🔁 Stability Check (Frame Consistency)
+
+* Object must appear in multiple consecutive frames before being announced
+* Prevents flickering or unstable detections
+
+---
+
+### 3. 🔊 Smarter Audio Feedback
+
+Instead of repeating:
+
+> "Chair... Chair..."
+
+We aim for:
+
+* "Chair detected ahead."
+* "Still in front."
+* "Moving away."
+
+---
+
+### 4. 🚀 Future Upgrade: Deep Learning Models
+
+* Plan to integrate **YOLO / advanced object detection models**
+* Reduce bias and improve real-world accuracy
+
+---
+
+## 🔐 Focus on Trust
+
+This project is designed for users who rely entirely on system feedback.
+
+> **Incorrect or repetitive information can reduce trust and impact usability.**
+
+Our approach:
+
+* Prioritize **accuracy over frequency**
+* Ensure **clear and meaningful communication**
+* Continuously test in real-world environments
+
+---
+
+## 📊 Testing Approach
+
+We are actively testing under:
+
+* Different lighting conditions
+* Multiple objects in frame
+* Moving objects and backgrounds
+* Real-time walking scenarios
+
+---
+
+## 💬 Final Note
+
+This is not just a technical system — it is a **trust-based assistive tool**.
+
+We are continuously improving:
+
+* Accuracy
+* Response quality
+* User experience
+
+to make it reliable for real-world use.
+
